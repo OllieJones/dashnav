@@ -1,0 +1,40 @@
+#dashnav-container:before {
+    position: absolute;
+    padding-top: 16px;
+    padding-left: 8px;
+    z-index: 20;
+    font: normal 20px / 1 dashicons !important;
+    content: "\f179";
+    color: #000;
+    speak: never;
+}
+
+#dashnav-container {
+    border: none;
+    min-height: 34px;
+    position: relative;
+}
+
+#dashnav-field {
+    width: 100%;
+    text-indent: 26px;
+    margin: 10px auto 10px auto;
+}
+
+html ul.ui-menu.ui-autocomplete.ui-front > li.ui-menu-item > div.ui-menu-item-wrapper.ui-state-active {
+/ / HACK HACK this is to remember the selector for stuff in the menu
+}
+html ul.ui-menu.ui-autocomplete.ui-front > li.ui-menu-item > div.ui-menu-item-wrapper {
+    margin-top: -2.5px;
+    margin-bottom: -2.5px;
+}
+
+html ul.ui-menu.ui-autocomplete.ui-front,
+#dashnav-field.active {
+    border-width: 1px;
+    border-radius: 3px;
+    min-width: 22em;
+    background: #fff;
+    z-index:20000
+}
+
