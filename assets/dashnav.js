@@ -8,8 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   define_mixins()
 
-  const panel_items = scrape_panel()
-  const menu_items = dedup_menu_items(scrape_panel().concat(scrape_menu()))
+  const menu_items = dedup_menu_items(scrape_menu())
 
   let previous_focus_element = false
   let previous_shift_time = false
@@ -48,23 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
       },
 
     })
-  }
-
-  function scrape_panel() {
-    const menu_items = []
-    const labels = document.querySelectorAll('#wpbody-content div.wrap form label')
-
-    for (const labelel of labels) {
-      const labelfor = labelel.hasAttribute('for')? labelel.getAttribute('for') : null;
-      if ('string' === typeof labelfor) {
-        const label = labelel.ownText().trim()
-        if ('string' === typeof label && label.length > 0) {
-          const link = document.location.pathname + '#' + labelfor
-          menu_items.push({label, link})
-        }
-      }
-    }
-    return menu_items
   }
 
   /**
@@ -173,6 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     return menu_items
   }
+
   function dedup_menu_items(raw_items) {
     /* Map each URL to an array of labels. Most of those arrays nave just one element.
      * We care about the ones with more than one elementl; they are the dups.     */
@@ -191,13 +174,13 @@ document.addEventListener('DOMContentLoaded', () => {
       if (urlmap.get(key).length > 1) {
         const labels = urlmap.get(key)
         /* Sort the labels so the last one is the keeper */
-        labels.sort( (a,b) => {
+        labels.sort((a, b) => {
           const adelim = a.includes(dashnav.submenu_delimiter)
           const bdelim = b.includes(dashnav.submenu_delimiter)
           /* If just one has the delmiter, keep it. */
           if (adelim === bdelim) {
             if (a.length === b.length) {
-              return a.localeCompare(a,b, locales )
+              return a.localeCompare(b, locales)
             }
             return a.length < b.length ? -1 : 1
           }
