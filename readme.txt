@@ -5,11 +5,12 @@ Tags: administration, dashboard, search, navigation
 Requires at least: 4.3
 Tested up to: 6.8-beta2
 Requires PHP: 5.6
-Stable tag: 0.1.0
+Stable tag: 0.9.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Donate: https://github.com/sponsors/OllieJones
 
-Quickly mavigate your WordPress dashboard by searching with a few keystrokes.
+Navigate your WordPress dashboard by searching with a few keystrokes.
 
 == Description ==
 
@@ -45,62 +46,17 @@ Each user can enable or disable it in their user profile.
 
 = I publish my own plugin. Can I put my plugin's commands into the dropdown list ? =
 
-Yes. The dropdown list already includes the top-level menus and submenus your plugin defines.
-
-[TODO Filter for adding some other dropdown mennu entries'. ]
+Yes. The dropdown list already includes the top-level menus and submenus created by your plugin and other plugins.
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
 
 == Changelog ==
 
-= 1.0 =
-* A change since the previous version.
-* Another change.
-
-= 0.5 =
-* List versions from most recent at top to oldest at bottom.
+= 0.9.0 =
+* First release.
 
 == Upgrade Notice ==
 
-= 1.0 =
-Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.
-
-= 0.5 =
-This version fixes a security related bug.  Upgrade immediately.
-
-== Arbitrary section ==
-
-You may provide arbitrary sections, in the same format as the ones above.  This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation."  Arbitrary sections will be shown below the built-in sections outlined above.
-
-== A brief Markdown Example ==
-
-Ordered list:
-
-1. Some feature
-1. Another feature
-1. Something else about the plugin
-
-Unordered list:
-
-* something
-* something else
-* third thing
-
-Here's a link to [WordPress](https://wordpress.org/ "Your favorite software") and one to [Markdown's Syntax Documentation][markdown syntax].
-Titles are optional, naturally.
-
-[markdown syntax]: https://daringfireball.net/projects/markdown/syntax
-            "Markdown is what the parser uses to process much of the readme file"
-
-Markdown uses email style notation for blockquotes and I've been told:
-> Asterisks for *emphasis*. Double it up  for **strong**.
-
-`<?php code(); // goes in backticks ?>`
+= 0.9.0 =
+* First release.

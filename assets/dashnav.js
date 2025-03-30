@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
       delay: 50,
       autoFocus: true,
       select: (event, menu_item) => {
+        search_box.value = ''
         document.location = menu_item.item.link
       },
       source: function (request, response) {
@@ -214,12 +215,13 @@ document.addEventListener('DOMContentLoaded', () => {
     inp.dataset.placeholder = dashnav.placeholder
     inp.dataset.placeholder_active = dashnav.placeholder_active
     inp.placeholder = inp.dataset.placeholder
+    inp.setAttribute('autocomplete', 'off')
     inp.id = 'dashnav-field'
 
     const con = document.createElement('li')
     con.id = 'dashnav-container'
     con.class = 'menu-top'
-    inp.dataset.description = '<shift><shift> to activate'
+    inp.dataset.description = dashnav.tooltip
     inp.title = inp.dataset.description
     con.appendChild(inp)
 
@@ -289,6 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function activate(event, active) {
     const el = event.target
+    el.setAttribute('autocomplete', 'off')
     el.placeholder = active ? el.dataset.placeholder_active : el.dataset.placeholder
     el.classList.add(active ? 'active' : 'inactive')
     el.classList.remove(!active ? 'active' : 'inactive')
@@ -339,7 +342,7 @@ document.addEventListener('DOMContentLoaded', () => {
     )
     search_box.addEventListener('focus', event => {
       activate(event, true)
-      event.target.select()
+      search_box.value = ''
     })
     search_box.addEventListener('blur', event => {
 

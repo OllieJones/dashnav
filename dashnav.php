@@ -7,7 +7,7 @@
  * Author URI:      https://github.com/OllieJones/
  * Text Domain:     dashnav
  * Domain Path:     /languages
- * Version:         0.1.0
+ * Version:         0.9.0
  * License:         GPLv2 or later
  *
  * @package         Dashnav
@@ -26,7 +26,7 @@ add_action( 'edit_user_profile_update', '\Dashnav\save_personal_options' );
 
 
 function admin_init() {
-  $version = '0.1.0';
+  $version = '0.9.0';
 
   load_plugin_textdomain( 'dashnav', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
@@ -37,14 +37,14 @@ function admin_init() {
 
     $i18n = array(
       /* translators: name of plugin to appear as the placeholder in the search box. */
-      'placeholder'        => __( 'Shift Shift Navigate', 'admin-quick-search' ),
+      'placeholder'        => __( 'Navigator', 'dashnav' ),
       // Intentional use of core localization strings.
       // phpcs:ignore WordPress.WP.I18n.MissingArgDomain
-      'placeholder_active' => implode( ' ', array( __( 'Search' ), __( 'Menus' ) ) ),
+      'placeholder_active' => implode( ' ', array( __( 'Search' ), __( 'Dashboard' ), __( 'Menus' ) ) ),
       /* translators: this is the delimiter between menu and submenu. For example Settings > General. Change for RTL languages  to  ⮜*/
       'submenu_delimiter'  => __( ' ⮞ ', 'dashnav' ),
+      'tooltip' => __( '<shift><shift> activates the Dashboard Navigator', 'dashnav' ),
       'locale'             => get_user_locale(),
-      'user_id'            => wp_get_current_user()->ID,
     );
     wp_localize_script( 'dashnav', 'dashnav', $i18n );
   }
@@ -59,12 +59,12 @@ function get_dashnav_pref( $user = 0 ) {
 function personal_options( $profile_user ) {
   ?>
   <tr class="show-admin-bar user-admin-bar-front-wrap">
-    <th scope="row"><?php esc_html_e( 'Dashboard Navigation', 'dashnav' ); ?></th>
+    <th scope="row"><?php esc_html_e( 'Dashboard Navigator', 'dashnav' ); ?></th>
     <td>
       <label for="dashnav">
         <input name="dashnav" type="checkbox" id="dashnav"
                value="1"<?php checked( get_dashnav_pref( $profile_user->ID ) ); ?> />
-        <?php esc_html_e( 'Use quick dashboard navigation', 'dashnav' ); ?>
+        <?php esc_html_e( 'Show the dashboard navigator', 'dashnav' ); ?>
       </label><br/>
     </td>
   </tr>
