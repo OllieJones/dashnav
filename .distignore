@@ -5,6 +5,7 @@
 .editorconfig
 .eslintignore
 .eslintrc
+.wordpress-org
 .git
 .gitignore
 .github

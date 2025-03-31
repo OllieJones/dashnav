@@ -1,9 +1,8 @@
 === Dashboard Navigator ===
 Contributors: OllieJones
-//Donate link: https://example.com/
 Tags: administration, dashboard, search, navigation
 Requires at least: 4.3
-Tested up to: 6.8-beta2
+Tested up to: 6.8-beta3
 Requires PHP: 5.6
 Stable tag: 0.9.0
 License: GPLv2 or later
@@ -35,6 +34,10 @@ The usual way.
 = Will this plugin slow down my site for my users? =
 
 **No.** It does nothing on your site's front-end pages. And, for your dashboard users it adds one small Javascript file.
+
+= Does this work for languages rendered right-to-left as well as left-to-right? =
+
+**Yes.**
 
 = What if some of my registered users don't want it? =
 
