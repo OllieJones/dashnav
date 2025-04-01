@@ -2,9 +2,9 @@
 Contributors: OllieJones
 Tags: administration, dashboard, search, navigation
 Requires at least: 4.3
-Tested up to: 6.8-beta3
+Tested up to: 6.8
 Requires PHP: 5.6
-Stable tag: 0.9.0
+Stable tag: 0.9.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Donate: https://github.com/sponsors/OllieJones
@@ -19,11 +19,11 @@ The plugin places a search box at the top of the menu at the top left of WordPre
 
 You can press Shift twice rapidly instead of clicking in the search box. So, for example, to see your orders in your WooCommerce store, type this.
 
-`Shift` `Shift` `O` `r` `d` `e` `r` `s` `Enter`
+`Shift` `Shift` `o` `r` `d` `e` `r` `s` `Enter`
 
 Tnat's it.
 
-How does this plugin work? It is lightweight.  It sends its small JavaScript file to your browser for every dashoard page. That JavaScript analyzes the WordPress menus and preparse the dropdown list.
+How does this plugin work? It is lightweight. It sends its small JavaScript file to your browser for every dashoard page. That JavaScript analyzes the WordPress menus and preparse the dropdown list.
 
 == Installation ==
 
@@ -56,10 +56,10 @@ Yes. The dropdown list already includes the top-level menus and submenus created
 
 == Changelog ==
 
-= 0.9.0 =
+= 0.9.1 =
 * First release.
 
 == Upgrade Notice ==
 
-= 0.9.0 =
+= 0.9.1 =
 * First release.

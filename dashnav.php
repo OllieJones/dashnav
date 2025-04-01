@@ -26,7 +26,7 @@ add_action( 'edit_user_profile_update', '\Dashnav\save_personal_options' );
 
 
 function admin_init() {
-  $version = '0.9.0';
+  $version = '0.9.1';
 
   load_plugin_textdomain( 'dashnav', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
