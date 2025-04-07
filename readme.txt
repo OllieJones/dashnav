@@ -9,7 +9,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Donate: https://github.com/sponsors/OllieJones
 
-Navigate your WordPress dashboard by searching with a few keystrokes.
+Navigate your WordPress dashboard by searching with a few keystrokes.  Press shift shift, then a few letters of the menu item you want.
 
 == Description ==
 

@@ -2,7 +2,7 @@
 /**
  * Plugin Name:     Dashboard Navigator
  * Plugin URI:      https://github.com/OllieJones/dashnav
- * Description:     Dashboard Navigator for WordPress
+ * Description:     Navigate your WordPress dashboard by searching with a few keystrokes.  Press shift shift, then a few letters of the menu item you want, then enter.
  * Author:          Ollie Jones
  * Author URI:      https://github.com/OllieJones/
  * Text Domain:     dashnav
