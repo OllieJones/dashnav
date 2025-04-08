@@ -11,40 +11,53 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const search_box = make_search_box()
     if (search_box) {
-      setTimeout(function () {
-        do_matching_color_styles()
-        shift_shift()
+      do_matching_color_styles()
+      shift_shift()
 
-        jQuery(search_box).autocomplete({
-          minLength: 0,
-          delay: 0,
-          autoFocus: true,
-          select: (event, menu_item) => {
-            search_box.value = ''
-            document.location = menu_item.item.link
-          },
-          source: function (request, response) {
-            if (typeof request.term !== 'string' || request.term.length === 0) {
-              response(menu_items)
-              return
-            }
-            const term = request.term.normalize_for_search()
-            response(menu_items.filter(item => item.normalized.includes(term)))
-          },
+      jQuery(search_box).autocomplete({
+        minLength: 0,
+        delay: 0,
+        autoFocus: true,
+        select: (event, menu_item) => {
+          search_box.value = ''
+          document.location = menu_item.item.link
+        },
+        source: function (request, response) {
+          if (typeof request.term !== 'string' || request.term.length === 0) {
+            response(menu_items)
+            return
+          }
+          const term = request.term.normalize_for_search()
+          response(menu_items.filter(item => item.normalized.includes(term)))
+        },
 
-          open: (event, menu_item) => {
-            activate(event, true)
-          },
-          close: (event, menu_item) => {
-            activate(event, false)
-            if (previous_focus_element) {
-              previous_focus_element.focus()
-              previous_focus_element = null
-            }
-          },
+        open: (event, menu_item) => {
+          activate(event, true)
+        },
+        close: (event, menu_item) => {
+          activate(event, false)
+          if (previous_focus_element) {
+            previous_focus_element.focus()
+            previous_focus_element = null
+          }
+        },
 
-        })
-      }, 20);
+        /**
+         * We need to add specific classes here to avoid overriding "background" on other elements.
+         */
+      }).data("ui-autocomplete")._renderItem = (ul, item) => {
+        return jQuery('<li>')
+          .addClass('ui-menu-item')
+          .addClass('dashnav')
+          .append(jQuery('<div>')
+            .addClass('ui-menu-item-wrapper')
+            .addClass('dashnav')
+            .attr('tabindex', '-1')
+            .append(item.label)
+          )
+          .appendTo(ul)
+      }
+
     }
 
     /**
@@ -237,8 +250,9 @@ document.addEventListener('DOMContentLoaded', () => {
         || 'blue'
       const shadow_color = get_color('ul#adminmenu', 'background-color')
         || 'purple'
-      set_style('html ul.ui-menu.ui-autocomplete.ui-front > li.ui-menu-item > div.ui-menu-item-wrapper.ui-state-active',
-        {background_color: highlight_color, color: background_color}, 'dshnav-state-active')
+
+      set_style('html ul.ui-menu.ui-autocomplete.ui-front > li.ui-menu-item.dashnav > div.ui-menu-item-wrapper.ui-state-active.dashnav',
+        {background: highlight_color, color: background_color}, 'dashnav-state-active')
       set_style(['html ul.ui-menu.ui-autocomplete.ui-front', 'dashnav-field.active'],
         {box_shadow: `0 0 2px 2px ${shadow_color}`, border_color: highlight_color},
         'dashnav-state-shadow')

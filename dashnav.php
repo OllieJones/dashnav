@@ -33,7 +33,7 @@ function admin_init() {
   if ( get_dashnav_pref() ) {
     wp_enqueue_style( 'jquery-ui-autocomplete' );
     wp_enqueue_style( 'dashnav', plugin_dir_url( __FILE__ ) . 'assets/dashnav.css', array(), $version, 'all' );
-    wp_enqueue_script( 'dashnav', plugin_dir_url( __FILE__ ) . '/assets/dashnav.js', array( 'jquery-ui-autocomplete' ), $version, true );
+    wp_enqueue_script( 'dashnav', plugin_dir_url( __FILE__ ) . 'assets/dashnav.js', array( 'jquery-ui-autocomplete' ), $version, true );
 
     $i18n = array(
       /* translators: name of plugin to appear as the placeholder in the search box. */
