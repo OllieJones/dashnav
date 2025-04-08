@@ -7,7 +7,7 @@
  * Author URI:      https://github.com/OllieJones/
  * Text Domain:     dashnav
  * Domain Path:     /languages
- * Version:         0.9.0
+ * Version:         0.9.1
  * License:         GPLv2 or later
  *
  * @package         Dashnav

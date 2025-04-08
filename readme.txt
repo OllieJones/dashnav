@@ -2,7 +2,7 @@
 Contributors: OllieJones
 Tags: administration, dashboard, search, navigation
 Requires at least: 4.3
-Tested up to: 6.8
+Tested up to: 6.7
 Requires PHP: 5.6
 Stable tag: 0.9.1
 License: GPLv2 or later
@@ -45,11 +45,11 @@ Each user can enable or disable it in their user profile.
 
 = Does it present any security problems? =
 
-**No.** At least it is designed to be secure. It works entirely in each user's browser with the menus WordPress sends to the browser.
+**No.**  It works entirely in each user's browser with the menus WordPress sends to the browser.
 
 = I publish my own plugin. Can I put my plugin's commands into the dropdown list ? =
 
-Yes. The dropdown list already includes the top-level menus and submenus created by your plugin and other plugins.
+Yes. The dropdown list includes the top-level menus and submenus created by your plugin and other plugins.
 
 == Screenshots ==
 
@@ -57,9 +57,11 @@ Yes. The dropdown list already includes the top-level menus and submenus created
 == Changelog ==
 
 = 0.9.1 =
+* Plugin review.
+
+= 0.9.0 =
 * First release.
 
 == Upgrade Notice ==
 
-= 0.9.1 =
 * First release.
