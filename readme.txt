@@ -2,9 +2,9 @@
 Contributors: OllieJones
 Tags: administration, dashboard, search, navigation
 Requires at least: 4.3
-Tested up to: 6.7
-Requires PHP: 7.0
-Stable tag: 0.9.2
+Tested up to: 6.8
+Requires PHP: 5.6
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Donate link: https://github.com/sponsors/OllieJones
@@ -24,6 +24,10 @@ You can press Shift twice rapidly instead of clicking in the search box. So, for
 Tnat's it.
 
 How does this plugin work? It is lightweight. It sends its small JavaScript file to your browser for every dashboard page. That JavaScript analyzes the WordPress menus and prepares the dropdown list.
+
+<h4>Credits</h4>
+
+Props to [herchen](https://profiles.wordpress.org/herchen/) for his [Admin Menu Search](https://wordpress.org/plugins/admin-menu-search/) plugin. This is, I hope, worthwhile improvement on it.
 
 == Installation ==
 
@@ -53,13 +57,13 @@ Yes. The dropdown list includes the top-level menus and submenus created by your
 
 == Screenshots ==
 
+1. Type shift shift or click on the Navigator to search menus.
+
+2. Type a few characters, use the arrow keys to choose an item, then hit enter.
 
 == Changelog ==
 
-= 0.9.2 =
-* Plugin review.
-
-= 0.9.0 =
+= 1.0.0 =
 * First release.
 
 == Upgrade Notice ==

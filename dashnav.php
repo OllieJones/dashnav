@@ -7,8 +7,9 @@
  * Author URI:      https://github.com/OllieJones/
  * Text Domain:     dashnav
  * Domain Path:     /languages
- * Version:         0.9.2
- * Requires PHP:    7.0
+ * Tested up to:    6.8
+ * Version:         1.0.0
+ * Requires PHP:    5.6
  * License:         GPLv2 or later
  *
  * @package         Dashnav
