@@ -7,7 +7,8 @@
  * Author URI:      https://github.com/OllieJones/
  * Text Domain:     dashnav
  * Domain Path:     /languages
- * Version:         0.9.1
+ * Version:         0.9.2
+ * Requires PHP:    7.0
  * License:         GPLv2 or later
  *
  * @package         Dashnav
@@ -26,7 +27,7 @@ add_action( 'edit_user_profile_update', '\Dashnav\save_personal_options' );
 
 
 function admin_init() {
-  $version = '0.9.1';
+  $version = '0.9.2';
 
   load_plugin_textdomain( 'dashnav', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
@@ -43,7 +44,7 @@ function admin_init() {
       'placeholder_active' => implode( ' ', array( __( 'Search' ), __( 'Dashboard' ), __( 'Menus' ) ) ),
       /* translators: this is the delimiter between menu and submenu. For example Settings > General. Change for RTL languages  to  ⮜*/
       'submenu_delimiter'  => __( ' ⮞ ', 'dashnav' ),
-      'tooltip' => __( '<shift><shift> activates the Dashboard Navigator', 'dashnav' ),
+      'tooltip'            => __( '<shift><shift> activates the Dashboard Navigator', 'dashnav' ),
       'locale'             => get_user_locale(),
     );
     wp_localize_script( 'dashnav', 'dashnav', $i18n );

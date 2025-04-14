@@ -3,11 +3,11 @@ Contributors: OllieJones
 Tags: administration, dashboard, search, navigation
 Requires at least: 4.3
 Tested up to: 6.7
-Requires PHP: 5.6
-Stable tag: 0.9.1
+Requires PHP: 7.0
+Stable tag: 0.9.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Donate: https://github.com/sponsors/OllieJones
+Donate link: https://github.com/sponsors/OllieJones
 
 Navigate your WordPress dashboard by searching with a few keystrokes.  Press shift shift, then a few letters of the menu item you want.
 
@@ -23,7 +23,7 @@ You can press Shift twice rapidly instead of clicking in the search box. So, for
 
 Tnat's it.
 
-How does this plugin work? It is lightweight. It sends its small JavaScript file to your browser for every dashoard page. That JavaScript analyzes the WordPress menus and preparse the dropdown list.
+How does this plugin work? It is lightweight. It sends its small JavaScript file to your browser for every dashboard page. That JavaScript analyzes the WordPress menus and prepares the dropdown list.
 
 == Installation ==
 
@@ -56,7 +56,7 @@ Yes. The dropdown list includes the top-level menus and submenus created by your
 
 == Changelog ==
 
-= 0.9.1 =
+= 0.9.2 =
 * Plugin review.
 
 = 0.9.0 =
