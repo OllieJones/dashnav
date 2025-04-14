@@ -17,9 +17,9 @@ In modern operating systems you can press a Start or Spotlight key, type a few l
 
 The plugin places a search box at the top of the menu at the top left of WordPress's dashboard. (That menu is at the top right if you use a right-to-left language such as Rohingya or Arabic.) Click in that menu and type a few letters. You'll see a drop-down list of matching commands. Use arrow keys to select the command you want, and press Enter or Tab.
 
-You can press Shift twice rapidly instead of clicking in the search box. So, for example, to see your orders in your WooCommerce store, type this.
+You can press Shift twice rapidly instead of clicking in the search box. So, for example, to go to your orders in your WooCommerce store, type this.
 
-`Shift` `Shift` `o` `r` `d` `e` `r` `s` `Enter`
+**Shift** **Shift** **o** **r** **d** **e** **r** **s** **Enter**
 
 Tnat's it.
 
