@@ -1,21 +1,22 @@
 {
-  "landingPage": "\/wp-admin\/index.php",
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "landingPage": "/wp-admin/",
   "preferredVersions": {
     "php": "8.0",
     "wp": "latest"
   },
-  "phpExtensionBundles": [
-    "kitchen-sink"
-  ],
+  "siteOptions": {
+    "blogname": "Dashboard Navigator Demo"
+  },
   "features": {
     "networking": true
   },
   "steps": [
     {
       "step": "installPlugin",
-      "pluginZipFile": {
-        "resource": "url",
-        "url": "https:\/\/downloads.wordpress.org\/plugin\/dashnav.zip"
+      "pluginData": {
+        "resource": "wordpress.org/plugins",
+        "slug": "dashnav"
       },
       "options": {
         "activate": true
