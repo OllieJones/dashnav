@@ -70,7 +70,7 @@ Yes. The dropdown list includes the top-level menus and submenus created by your
 
 ## Changelog
 
-### 1.1.0
+### 1.1.1
 
 Suppress ctrl+k command palette when active.
 

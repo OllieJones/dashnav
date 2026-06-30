@@ -32,7 +32,7 @@ add_action( 'admin_init', function () {
 
 
 function screen_init(  ) {
-  $version = '1.1.0';
+  $version = '1.1.1';
 
   if ( wp_should_load_block_editor_scripts_and_styles() ) {
     return;
