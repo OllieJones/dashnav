@@ -1,21 +1,21 @@
-# Copyright (C) 2025 Ollie Jones
+# Copyright (C) 2026 Ollie Jones
 # This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Dashboard Navigator 1.0.0\n"
+"Project-Id-Version: Dashboard Navigator 1.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/dashnav\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-04-14T13:09:44-04:00\n"
+"POT-Creation-Date: 2026-06-30T18:12:55+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.9.0\n"
 "X-Domain: dashnav\n"
 
 #. Plugin Name of the plugin
-#: dashnav.php:63
+#: dashnav.php:75
 msgid "Dashboard Navigator"
 msgstr ""
 
@@ -36,19 +36,19 @@ msgid "https://github.com/OllieJones/"
 msgstr ""
 
 #. translators: name of plugin to appear as the placeholder in the search box.
-#: dashnav.php:41
+#: dashnav.php:53
 msgid "Navigator"
 msgstr ""
 
 #. translators: this is the delimiter between menu and submenu. For example Settings > General. Change for RTL languages  to  ⮜
-#: dashnav.php:46
+#: dashnav.php:58
 msgid " ⮞ "
 msgstr ""
 
-#: dashnav.php:47
-msgid "<shift><shift> activates the Dashboard Navigator"
+#: dashnav.php:59
+msgid "Ctrl+K or Shift Shift to activate the Dashboard Navigator"
 msgstr ""
 
-#: dashnav.php:68
+#: dashnav.php:80
 msgid "Show the dashboard navigator"
 msgstr ""

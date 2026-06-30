@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (search_box) {
       do_matching_color_styles()
       shift_shift()
+      ctrl_k()
 
       jQuery(search_box).autocomplete({
         minLength: 0,
@@ -308,6 +309,27 @@ document.addEventListener('DOMContentLoaded', () => {
       el.classList.remove(!active ? 'active' : 'inactive')
     }
 
+  /**
+   *  ctrl-k activates it as well as shift shift */
+  function ctrl_k() {
+      document.addEventListener('keydown', event => {
+        if ( event.ctrlKey && event.key === 'k') {
+          event.stopImmediatePropagation()
+          event.stopPropagation()
+          event.preventDefault()
+          if (!search_box.classList.contains('active')) {
+            const focus = document.activeElement
+            if (focus !== search_box) {
+              previous_focus_element = focus
+              setTimeout ( () => {
+                search_box.focus()
+              }, 100)
+              search_box.focus()
+            }
+          }
+        }
+      })
+    }
     /**
      *   <shift><shift> within 500 ms puts us into search box.
      *   <esc> gets us out again.

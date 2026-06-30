@@ -1,17 +1,18 @@
-=== Dashboard Navigator ===
-Contributors: OllieJones
-Tags: administration, dashboard, search, navigation
-Requires at least: 4.3
-Tested up to: 7.0
-Requires PHP: 5.6
-Stable tag: 1.1.0
-License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Donate link: https://github.com/sponsors/OllieJones
+# Dashboard Navigator
+
+**Contributors:** OllieJones \
+**Tags:** administration, dashboard, search, navigation \
+**Requires at least:** 4.3 \
+**Tested up to:** 7.0 \
+**Requires PHP:** 5.6 \
+**Stable tag:** 1.1.0 \
+**License:** GPLv2 or later \
+**License URI:** https://www.gnu.org/licenses/gpl-2.0.html \
+**Donate link:** https://github.com/sponsors/OllieJones
 
 Navigate your WordPress dashboard by searching with a few keystrokes.  Press shift shift, then a few letters of the menu item you want.
 
-== Description ==
+## Description
 
 In modern operating systems you can press a Start or Spotlight key, type a few letters of the operation you need, and choose it. There's no need to waste time clicking around in the menus looking for your command. This plugin gives you the same capability for WordPress's dashboard and its features.
 
@@ -29,46 +30,54 @@ How does this plugin work? It is lightweight. It sends its small JavaScript file
 
 Props to [herchen](https://profiles.wordpress.org/herchen/) for his [Admin Menu Search](https://wordpress.org/plugins/admin-menu-search/) plugin. This is, I hope, worthwhile improvement on it.
 
-== Installation ==
+## Installation
 
 The usual way.
 
-== Frequently Asked Questions ==
+## Frequently Asked Questions
 
-= Will this plugin slow down my site for my users? =
+### Will this plugin slow down my site for my users?
 
 **No.** It does nothing on your site's front-end pages. And, for your dashboard users it adds one small Javascript file.
 
-= Does this work for languages rendered right-to-left as well as left-to-right? =
+### Does this work for languages rendered right-to-left as well as left-to-right?
 
 **Yes.**
 
-= What if some of my registered users don't want it? =
+### What if some of my registered users don't want it?
 
 Each user can enable or disable it in their user profile.
 
-= Does it present any security problems? =
+### Does it present any security problems?
 
 **No.**  It works entirely in each user's browser with the menus WordPress sends to the browser.
 
-= I publish my own plugin. Can I put my plugin's commands into the dropdown list ? =
+### I publish my own plugin. Can I put my plugin's commands into the dropdown list ?
 
 Yes. The dropdown list includes the top-level menus and submenus created by your plugin and other plugins.
 
-== Screenshots ==
+## Screenshots
 
-1. Type shift shift or click on the Navigator to search menus.
+### 1. Type shift shift or click on the Navigator to search menus.
 
-2. Type a few characters, use the arrow keys to choose an item, then hit enter.
+[missing image]
 
-== Changelog ==
 
-= 1.1.0 =
+### 2. Type a few characters, use the arrow keys to choose an item, then hit enter.
+
+[missing image]
+
+
+## Changelog
+
+### 1.1.0
+
 Suppress ctrl+k command palette when active.
 
-= 1.0.0 =
+### 1.0.0
+
 * First release.
 
-== Upgrade Notice ==
+## Upgrade Notice
 
 * Suppresses the ctrl+k command palette when active.
