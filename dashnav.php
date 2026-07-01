@@ -8,7 +8,8 @@
  * Text Domain:     dashnav
  * Domain Path:     /languages
  * Tested up to:    7.0
- * Version:         1.1.2
+ * Version:         1.1.3
+ * Stable tag:      1.1.3
  * Requires PHP:    5.6
  * License:         GPLv2 or later
  *
@@ -18,12 +19,14 @@
 // Your code starts here.
 
 namespace Dashnav;
+if ( ! defined( 'ABSPATH' ) ) {
+  exit;
+}
 
 use WP_Admin_Bar;
 use function add_action;
 
 add_action( 'admin_init', function () {
-  load_plugin_textdomain( 'dashnav', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
   add_action( 'current_screen', '\Dashnav\screen_init' );
   add_action( 'personal_options', '\Dashnav\personal_options', 10, 1 );
   add_action( 'personal_options_update', '\Dashnav\save_personal_options' );
@@ -32,9 +35,8 @@ add_action( 'admin_init', function () {
 
 
 function screen_init(  ) {
-  $version = '1.1.2';
-
-  if ( wp_should_load_block_editor_scripts_and_styles() ) {
+  $version = '1.1.3';
+  if ( function_exists( 'wp_should_load_block_editor_scripts_and_styles') && wp_should_load_block_editor_scripts_and_styles() ) {
     return;
   }
 

@@ -1,11 +1,11 @@
 === Dashboard Navigator ===
 Contributors: OllieJones
 Tags: administration, dashboard, search, navigation
-Requires at least: 4.3
+Requires at least: 4.7
 Tested up to: 7.0
 Requires PHP: 5.6
-Stable tag: 1.1.2
 License: GPLv2 or later
+Stable tag: 1.1.3
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Donate link: https://github.com/sponsors/OllieJones
 
@@ -63,7 +63,7 @@ Yes. The dropdown list includes the top-level menus and submenus created by your
 
 == Changelog ==
 
-= 1.1.2 =
+= 1.1.3 =
 Suppress ctrl+k command palette when active.
 
 = 1.0.0 =

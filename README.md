@@ -5,7 +5,7 @@
 **Requires at least:** 4.3 \
 **Tested up to:** 7.0 \
 **Requires PHP:** 5.6 \
-**Stable tag:** 1.1.2 \
+**Stable tag:** 1.1.3 \
 **License:** GPLv2 or later \
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html \
 **Donate link:** https://github.com/sponsors/OllieJones
@@ -70,7 +70,7 @@ Yes. The dropdown list includes the top-level menus and submenus created by your
 
 ## Changelog
 
-### 1.1.1
+### 1.1.3
 
 Suppress ctrl+k command palette when active.
 
